@@ -1,0 +1,44 @@
+127.0.0.1	localhost
+127.0.1.1	ds25
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+# mysql-warehouse
+10.10.234.212       db1.dandsltd.com db1
+# sybase
+10.10.0.8       db2.dandsltd.com db2
+# dev-mysql-warehouse
+10.128.0.13       db1-dev.dandsltd.com db1-dev
+# dev-sybase
+10.128.0.4       db2-dev.dandsltd.com db2-dev
+# gfs
+10.10.0.2       gfs1.dandsltd.com gfs1
+10.10.0.7       gfs2.dandsltd.com gfs2
+# devRedis
+# 127.0.0.1       redis.default.svc.cluster.local
+# devDragon
+# 127.0.0.1       dragon.default.svc.cluster.local
+# 127.0.0.1       dev-dragon.dandsltd.com
+# devBackoffice
+# 127.0.0.1       backoffice.default.svc.cluster.local
+# 127.0.0.1       dev-backoffice.dandsltd.com
+# devPortal
+# 127.0.0.1       portal.default.svc.cluster.local
+# 127.0.0.1       dev-portal.dandsltd.com
+127.0.0.1       redis.default.svc.cluster.local
+#127.0.0.1       dragon.default.svc.cluster.local
+#127.0.0.1       dev-dragon.dandsltd.com
+#127.0.0.1       backoffice.default.svc.cluster.local
+#127.0.0.1       dev-backoffice.dandsltd.com
+#127.0.0.1       portal.default.svc.cluster.local
+#127.0.0.1       dev-portal.dandsltd.com
+127.0.0.1       dragon.default.svc.cluster.local
+127.0.0.1       local-dragon.dandsltd.com
+127.0.0.1       backoffice.default.svc.cluster.local
+127.0.0.1       local-backoffice.dandsltd.com
+127.0.0.1       portal.default.svc.cluster.local
+127.0.0.1       local-portal.dandsltd.com

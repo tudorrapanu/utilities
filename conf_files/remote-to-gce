@@ -1,0 +1,23 @@
+[connection]
+id=remote-to-gce
+uuid=e6889ec3-38bb-403b-b816-0925aa9ef73c
+type=vpn
+timestamp=1433868860
+
+[vpn]
+service-type=org.freedesktop.NetworkManager.openvpn
+connection-type=password
+password-flags=1
+remote=162.222.176.140
+comp-lzo=yes
+proto-tcp=yes
+port=1194
+username={{ salt['pillar.get']('names:username') }}
+ca=/etc/NetworkManager/system-connections/ca.crt
+
+[ipv6]
+method=auto
+
+[ipv4]
+method=auto
+never-default=true

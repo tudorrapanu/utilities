@@ -1,0 +1,12 @@
+# DbVisualizer license key
+dbvis.license.product        = DbVisualizer
+dbvis.license.edition        = Personal
+dbvis.license.id             = 82510074 / #1
+dbvis.license.name           = D&S Ltd
+dbvis.license.org            = D&S Ltd
+dbvis.license.activation     = 2015-11-08
+dbvis.license.expire         = 2099-01-01
+dbvis.license.upgrade.expire = 2016-11-08
+dbvis.license.seal           = MC0CFFxoChAil8cxe6aHZo8d/VXIDJQ3AhUAglNZeLBC8Zw+N+EDhBYrJSKYEPk=
+# The following is needed only for backward compatibility
+dbvis.license.version        = 5.*

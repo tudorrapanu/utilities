@@ -1,0 +1,21 @@
+#!/bin/bash
+VPN_NAME="remote-to-corenap"
+CONF_FILE="/home/user1/remote-to-gce.conf"
+
+interface=$1
+status=$2
+case "$status" in
+  "vpn-up")
+      if [[ $VPN_NAME == $CONNECTION_ID ]]; then
+        # connect your second OpenVPN2 using .conf file:
+        openvpn --config $CONF_FILE
+      fi
+    ;;
+  "vpn-down")
+      if [[ $VPN_NAME == $CONNECTION_ID ]]; then
+        # close your second OpenVPN2
+        pid=$(ps -ef | grep "[o]penvpn --config $CONF_FILE" | awk '{ print $2 }')
+        kill $pid > /dev/null 2>&1
+      fi
+    ;;
+esac
